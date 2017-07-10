@@ -23,3 +23,14 @@ Things you may want to cover:
 
 * ...
 # akaWeb
+
+https://rubygems.org/gems/font-awesome-rails/versions/4.7.0.2
+
+GEMFILE:
+
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+=
+INSTALL:
+
+gem install font-awesome-rails
+=
