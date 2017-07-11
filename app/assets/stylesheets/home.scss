@@ -1014,7 +1014,8 @@ img{
 
 /* INFO */
 #info{
-  background:#333 image-url('logo_bk.png');
+  background: image-url('logo_bk.png');
+  background:#333; 
   background-size: cover;
   color:#fff;
 }
