@@ -14,6 +14,8 @@ built with
 * ...
 # akaWeb
 
+https://github.com/bokmann/font-awesome-rails
+
 https://rubygems.org/gems/font-awesome-rails/versions/4.7.0.2
 
 GEMFILE:
