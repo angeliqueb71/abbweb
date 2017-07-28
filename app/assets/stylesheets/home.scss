@@ -26,17 +26,17 @@
 }
 
 #showcase p{
-  color:#ccc;
+  color:#3e543a;
   margin:0;
 }
 
-#showcase .showcase-content{
-  background:#333;
-  color:#fff;
-  border-radius:90px;
-  padding:40px;
-  opacity:0.9;
-}
+// #showcase .showcase-content{
+//   background:#333;
+//   color:#fff;
+//   border-radius:90px;
+//   padding:40px;
+//   opacity:0.9;
+// }
 
 
 /* MEDIA QUERIES */
@@ -74,9 +74,10 @@
 
 /* INFO */
 #info{
-  background: image-url('arrow.jpg');
-  // background:#333;
+  background: image-url('show1.jpg');
+  // background:#ffbfd3;
   background-size: cover;
+  background-attachment: fixed;
   // color:#fff;
 
 }
@@ -100,8 +101,12 @@
 
 /* COMPANY */
 #company{
-  background:#333;
-  color:#fff;
+  // background:#3A7B72;
+  // color:#fff;
+  background: image-url('show1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+
   padding:10px 0;
 }
 
@@ -121,7 +126,7 @@
 }
 
 #company button{
-  background:#222;
+  background:#fb9f9f;
   color:#fff;
   padding:10px;
   border:0;
