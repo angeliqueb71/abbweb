@@ -1,6 +1,11 @@
 <!-- <h1>Services#index</h1>
 <p>Find me in app/views/services/index.html.erb</p> -->
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 <body>
     <!-- HEADER -->
     <header id="main-header">
@@ -14,7 +19,7 @@
               <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
-                <li class="current"><a href="/services">Services</a></li>
+                <li class="current"><a href="/services">Portfolio</a></li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
             </nav>
@@ -24,7 +29,7 @@
     </header>
 
     <!-- SUBHEADER -->
-    <section id="subheader">
+    <!-- <section id="subheader">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -32,10 +37,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- MAIN PAGE -->
-    <section id="page" class="services">
+    <!-- <section id="page" class="services">
       <div class="container">
         <div class="row center-xs center-sm center-md center-lg">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -58,6 +63,58 @@
         </div>
       </div>
     </section>
+ -->
+
+ <section id="features">
+   <div class="container">
+     <div class="row center-xs center-sm center-md center-lg">
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <h2>Portfolio</h2>
+         <p>with framework </p>
+         <!-- ICON ROW 1 -->
+         <div class="row center-xs center-sm center-md center-lg">
+           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+             <a href="https://colormestraight1.herokuapp.com"><i class=""><%= image_tag ("CMS1.jpg") %></i></a><br>
+             <a href="https://colormestraight1.herokuapp.com"><h4>Color Me Straight</h4></a>
+             <p>Rails 5 version, Action Cable, CSS5, Pure-CSS Parallax Scrolling </p>
+           </div>
+           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+             <a href="https://thrilllifeproduction.herokuapp.com"><i class=""><%= image_tag ("TLP3.jpg") %></i></a><br>
+             <a href="https://thrilllifeproduction.herokuapp.com"><h4>Thrill Life Productions</h4></a>
+             <p>Rails  5 version, SASS, bootstrap', '~> 4.0.0.alpha6, Font-awesome</p>
+           </div>
+           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+             <a href="https://brainflossff.herokuapp.com"><i class=""></i><%= image_tag ("BF1.jpg") %></a><br>
+             <a href="https://brainflossff.herokuapp.com"><h4>BrainFloss</h4></a>
+             <p>Rails  5 version, CSS5 Javascript, ScrollMAgic</p>
+           </div>
+         </div>
+
+         <!-- ICON ROW 2 -->
+         <div class="row center-xs center-sm center-md center-lg">
+           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+             <i class=""><%= image_tag ("CMS3.jpg") %></i><br>
+             <h4>Color Me Straight</h4>
+             <p></p>
+           </div>
+           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+             <i class=""><%= image_tag ("SQ1.jpg") %></i><br>
+             <h4>Suicide Squad</h4>
+             <p>API, HTML5, CSS5, Javascript</p>
+           </div>
+           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+             <i class=""><%= image_tag ("JB1.jpg") %></i><br>
+             <h4>Jukebox Tavern</h4>
+             <p>HTML5, CSS5, Javascript</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+
+
 
     <!-- COMPANY -->
     <section id="company">
