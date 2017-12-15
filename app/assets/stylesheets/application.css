@@ -35,16 +35,16 @@
 
  /* COMMON CLASSES */
  .primary-text{
-   color:#56a79a;
+   color:#fb5858;
  }
 
  .primary-background{
-   background:#56a79a;
+   background:#fb5858;
  }
 
  /* HEADER */
  #main-header{
-   border-bottom:1px solid #56a79a;
+   border-bottom:1px solid #fb5858;
  }
 
  /* NAVBAR */
@@ -65,7 +65,7 @@
 
  #navbar li.current a, #navbar a:hover{
    color:#56a79a;
-   border-bottom: 3px solid #56a79a;
+   border-bottom: 3px solid #fb5858;
    padding-bottom:3px;
  }
 
@@ -77,5 +77,5 @@
    padding: 40px;
    background:#fb5858;
    color:#fff;
-  
+
  }

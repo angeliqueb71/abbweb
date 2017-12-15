@@ -67,9 +67,9 @@
 
 /* SHOWCASE */
 #showcase{
-  background: image-url('show1.jpg');
+  background: image-url('computer9_img.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   border-bottom:1px solid #56a79a;
   margin-bottom:30px;
   background-attachment: fixed;
@@ -138,7 +138,7 @@
 
 /* INFO */
 #info{
-  background: image-url('show1.jpg');
+  background: image-url('computer9_img.jpg');
   // background:#ffbfd3;
   background-size: cover;
   background-attachment: fixed;
@@ -176,7 +176,7 @@
 
 #company h4{
   text-transform:uppercase;
-  margin-top: 40px;
+  // margin-top: 40px;
 }
 
 #company ul{
