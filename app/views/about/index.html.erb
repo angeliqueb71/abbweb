@@ -1,114 +1,170 @@
-<!-- <h1>About#index</h1>
-<p>Find me in app/views/about/index.html.erb</p> -->
+<!-- <h1>About#index</h1> <p>Find me in app/views/about/index.html.erb</p> -->
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
 
 <body>
-  <!-- HEADER -->
-  <header id="main-header">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
-      <div class="row end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg">
-        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-          <h1><span class="primary-text">aka</span>Web Woman</h1>
-        </div>
-        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-          <nav id="navbar">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li class="current"><a href="/about">About</a></li>
-              <li><a href="/services">Portfolio</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          </nav>
+      <a href="index.html" class="navbar-brand">aka<span class="text-danger">Webber</span></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="/services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a href="/" class="nav-link">Blog</a> -->
+          </li>
+          <li class="nav-item">
+            <a href="/contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--content -->
+
+  <!-- PAGE HEADER -->
+  <header id="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          <h1>About Us</h1>
+          <p>We are a passionate team of skilled designers and web developers. Providing seamless user experience.</p>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- SUBHEADER -->
-  <section id="subheader">
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-3">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>About Us</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MAIN PAGE -->
-  <section id="page" class="about">
-    <div class="container">
-      <div class="row center-xs center-sm center-md center-lg">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h2><span class="primary-text">Who</span> We Are</h2>
-          <p>At akaWeb Woman, we adhere to a strict set of principles. We use these principles to guide our practice, and assure that our performance upholds our standards of excellence. Each principle illustrates a different way that we apply the values in our Craftsmanship to a practical setting.</p>
-          <p>We come from many different backgrounds, and are brought together by our shared enthusiasm for turning complicated technological problems into elegant and simple design solutions.</p>
-          <br><br>
-
-          <hr>
-          <h2><span class="primary-text">What</span> We Do</h2>
-
-          <p>Our passions in the Design Studio is building. Our designers are not only creative visual and UX designers, but also creative front-end developers. We are always researching and practicing the best ways to build our frameworks, and like to craft durable, easily changeable layouts.</p>
+        <div class="col-md-6">
+          <h1>What We Do</h1>
+          <p>Our passions in the Design Studio is building. Our designers are not only creative visual and UX designers, but also creative Web developers. We are always researching and practicing the best ways to build our frameworks, and like to craft
+            durable, easily changeable layouts.</p>
           <p>Our team cares about every little detail, and we spend most of our time perfecting and polishing the entire application. The web delevopment and web design process is one of the most exciting steps.</p>
-          <br><br>
-          <p>Web Application Development: Expertly crafted and delivered on time, with Ruby, Rails, JavaScript, Node.js, Express and more.</p>
-          <p>Embedded Development: Custom applications for any device.</p>
-          <p>Software Deployment: Professionally handled deployments on any platform.</p>
-          <p>System Architecture: Expert advice and pragmatic design.</p>
-
           <hr>
-          <hr>
-          <h2><span class="primary-text">What</span> We Offer</h2>
-          <h3><p>Web Design & Development,  Software Development & Programming</p></h3>
-          <h3><p>Soical Media Marketing</p></h3>
-
-
+          <h2>Who We Are</h2>
+          <p>At akaWebber, we adhere to a strict set of principles. We use these principles to guide our practice, and assure that our performance upholds our standards of excellence. Each principle illustrates a different way that we apply the values in
+            our Craftsmanship to a practical setting.</p>
+          <p>We come from many different backgrounds, and are brought together by our shared enthusiasm for turning complicated technological problems into elegant and simple design solutions.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://source.unsplash.com/random/700x700/?technology" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- COMPANY -->
-  <section id="company">
+  <!-- ICON BOXES -->
+  <!-- PHOTO GALLERY -->
+  <section id="gallery" class="py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <h4>Contact Us</h4>
-          <ul>
-            <!-- <li><i class="fa fa-phone"></i> (000)111-1212</li> -->
-            <li><i class="fa fa-envelope"></i> akaweb.woman@gmail.com</li>
-            <li><i class="fa fa-map"></i> New York, NY</li>
-          </ul>
+      <h1 class="text-center">Our Blog</h1>
+      <p class="text-center">Check out our photos</p>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+            <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
+          </a>
         </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <!-- <h4>About Us</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p> -->
+
+        <div class="col-md-4">
+          <a href="https://source.unsplash.com/random/561x561" data-toggle="lightbox" data-gallery="img-gallery" data-height="561" data-width="561">
+            <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid">
+          </a>
         </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <h4>Newsletter</h4>
-          <p>Coming soon</p>
-          <form>
-            <input type="text" name="email" placeholder="Enter Email">
-            <button type="submit" name="button">Submit</button>
-          </form>
+
+        <div class="col-md-4">
+          <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery" data-height="562" data-width="562">
+            <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="p-4 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center">testimonials</h2>
+      <div class="row text-center">
+        <div class="col">
+          <div class="slider">
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  "This company is the best. I am so happy with the result!"
+                </p>
+                <footer class="blockquote-footer">Andrew Gonzalez, Vice President
+                  <cite title="Company 1">BG Property Finder</cite>
+                </footer>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  "Extremely Professional! Great understanding our concept & brand."<br><span>
+                </p>
+                <footer class="blockquote-footer">Christine Serrano, Owner
+                  <cite title="Company 2">Thrill Life Productions</cite>
+                </footer>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  "We wanted a solution that integrated all of our ideas and they exceeded all and more!"
+                </p>
+                <footer class="blockquote-footer">James Silverman
+                  <cite title="Company 3">Pet's Chip</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer id="main-footer">
+  <footer id="main-footer" class="text-center p-4">
     <div class="container">
-      <div class="row center-xs center-sm center-md center-lg">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <p></p>
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span>
+            akaWebber</p>
         </div>
       </div>
     </div>
   </footer>
 
+  <!--content end -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    $('.slider').slick({infinite: true, slideToShow: 1, slideToScroll: 1});
+  </script>
 </body>

@@ -1,158 +1,257 @@
-<!-- <h1>Services#index</h1>
-<p>Find me in app/views/services/index.html.erb</p> -->
+<!-- <h1>Services#index</h1> <p>Find me in app/views/services/index.html.erb</p> -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"/>
 
 <body>
-    <!-- HEADER -->
-    <header id="main-header">
-      <div class="container">
-        <div class="row end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg">
-          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <h1><span class="primary-text">aka</span>Web Woman</h1>
-          </div>
-          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-            <nav id="navbar">
-              <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li class="current"><a href="/services">Portfolio</a></li>
-                <li><a href="/contact">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">aka<span class="text-danger">Webber</span></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="/services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a href="/" class="nav-link">Blog</a> -->
+          </li>
+          <li class="nav-item">
+            <a href="/contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header id="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          <h1>Our Services</h1>
+          <h3 class="text-center">Please contact us for Pricing</h3>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- SUBHEADER -->
-    <!-- <section id="subheader">
+  <!-- SERVICES SECTION -->
+  <section>
+
+    <!-- ICON BOXES -->
+    <!--Web Design | Visual Design | Wireframes | Prototyping | Mobile Interface | User Testing  -->
+    <section id="icon-boxes" class="p-5">
       <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h1>Services</h1>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="card bg-danger text-white text-center">
+              <div class="card-body">
+                <!-- <i class="fas fa-building fa-3x"></i> -->
+                <h3>Responsive Web Design</h3>
+                Mobile and tablet-friendly websites that look great on any size screen and any device.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dark text-white text-center">
+              <div class="card-body">
+                <!-- <i class="fas fa-bullhorn fa-3x"></i> -->
+                <h3>Custom Web Design</h3>
+                Crafting unique user experiences specifically for your business and user segments.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-danger text-white text-center">
+              <div class="card-body">
+                <!-- <i class="fas fa-comments fa-3x"></i> -->
+                <h3>Ecommerce Web Design</h3>
+                Custom platforms with intuitive navigation, clean product pages and seamless checkout experiences.
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section> -->
 
-    <!-- MAIN PAGE -->
-    <!-- <section id="page" class="services">
-      <div class="container">
-        <div class="row center-xs center-sm center-md center-lg">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h2><span class="primary-text">See</span> What We Offer</h2>
-            <ul>
-              <li>
-                <h3>Web Design & Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </li>
-              <li>
-                <h3>Software Development & Programming</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </li>
-              <li>
-                <h3>Graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </li>
-            </ul>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="card bg-dark text-white text-center">
+              <div class="card-body">
+                <!-- <i class="fas fa-box fa-3x"></i> -->
+                <h3>Wireframes</h3>
+                Creating a visual understanding of a page early in a project for user and client approval.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
- -->
-
- <section id="features">
-   <div class="container">
-     <div class="row center-xs center-sm center-md center-lg">
-       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-         <h2>Portfolio</h2>
-         <p>with framework </p>
-         <!-- ICON ROW 1 -->
-         <div class="row center-xs center-sm center-md center-lg">
-           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-             <a href="https://colormestraight1.herokuapp.com"><i class=""><%= image_tag ("CMS1.jpg") %></i></a><br>
-             <a href="https://colormestraight1.herokuapp.com"><h4>Color Me Straight</h4></a>
-             <p>Rails 5 version, Action Cable, CSS5, Pure-CSS Parallax Scrolling </p>
-           </div>
-           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-             <a href="https://thrilllifeproduction.herokuapp.com"><i class=""><%= image_tag ("TLP3.jpg") %></i></a><br>
-             <a href="https://thrilllifeproduction.herokuapp.com"><h4>Thrill Life Productions</h4></a>
-             <p>Rails  5 version, SASS, bootstrap', '~> 4.0.0.alpha6, Font-awesome</p>
-           </div>
-           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-             <a href="https://brainflossff.herokuapp.com"><i class=""></i><%= image_tag ("BF1.jpg") %></a><br>
-             <a href="https://brainflossff.herokuapp.com"><h4>BrainFloss</h4></a>
-             <p>Rails  5 version, CSS5 Javascript, ScrollMAgic</p>
-           </div>
-         </div>
-
-         <!-- ICON ROW 2 -->
-         <div class="row center-xs center-sm center-md center-lg">
-           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-             <i class=""><%= image_tag ("CMS3.jpg") %></i><br>
-             <h4>Color Me Straight</h4>
-             <p></p>
-           </div>
-           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-             <i class=""><%= image_tag ("SQ1.jpg") %></i><br>
-             <h4>Suicide Squad</h4>
-             <p>API, HTML5, CSS5, Javascript</p>
-           </div>
-           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-             <i class=""><%= image_tag ("JB1.jpg") %></i><br>
-             <h4>Jukebox Tavern</h4>
-             <p>HTML5, CSS5, Javascript</p>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </section>
-
-
-
-
-    <!-- COMPANY -->
-    <section id="company">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <h4>Contact Us</h4>
-            <ul>
-              <!-- <li><i class="fa fa-phone"></i> (000)111-1212</li> -->
-              <li><i class="fa fa-envelope"></i> akaweb.woman@gmail.com</li>
-              <li><i class="fa fa-map"></i> New York, NY</li>
-            </ul>
+          <div class="col-md-4">
+            <div class="card bg-danger text-white text-center">
+              <div class="card-body">
+                <!-- <i class="fas fa-credit-card fa-3x"></i> -->
+                <h3>Prototyping</h3>
+                Creating interactive demos of a website before the project goes into final development.
+              </div>
+            </div>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <!-- <h4>About Us</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p> -->
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <h4>Newsletter</h4>
-            <p>Coming soon</p>
-            <form>
-              <input type="text" name="email" placeholder="Enter Email">
-              <button type="submit" name="button">Submit</button>
-            </form>
+          <div class="col-md-4">
+            <div class="card bg-dark text-white text-center">
+              <div class="card-body">
+                <!-- <i class="fas fa-coffee fa-3x"></i> -->
+                <h3>Visual Design</h3>
+                The visual design and brand experience is put in place and tested as part of the prototyping phase.
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+  </section>
 
-    <!-- FOOTER -->
-    <footer id="main-footer">
-      <div class="container">
-        <div class="row center-xs center-sm center-md center-lg">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p></p>
+  <!-- FAQ -->
+  <section id="faq" class="p-5 bg-dark text-white">
+    <div class="container">
+      <h1 class="text-center">Frequently Asked Questions</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <a href="#collapseOne" data-toggle="collapse" data-parent="accordion">
+                    What support do you offer after the site goes live?
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse">
+                <div class="card-body">
+                  We offer ongoing maintenance and monitoring packages.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <a href="#collapseTwo" data-toggle="collapse" data-parent="accordion">
+                    How long do typical website design projects take?
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseTwo" class="collapse">
+                <div class="card-body">
+                Every project is different. Once we go over all your details, you will be provided with a timeframe.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <a href="#collapseThree" data-toggle="collapse" data-parent="accordion">
+                    Will it be a responsive site that works on multiple mobile and tablet devices?
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseThree" class="collapse">
+                <div class="card-body">
+                  Your website will be coded for responsive design. Design for mobile breakpoints and tablets as well. We will provide mockups of the mobile and tablet interfaces.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <a href="#collapseFour" data-toggle="collapse" data-parent="accordion">
+                    What search engine optimization or marketing do you do for the site?
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseFour" class="collapse">
+                <div class="card-body">
+                  Performing on-site search engine optimization during the setup process. We offer off-site optimization. Also we submit your site to local or niche directories. We will continue to optimize blog posts or compose additional ongoing content. This service require ongoing fees.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <a href="#collapseFive" data-toggle="collapse" data-parent="accordion">
+                    What other services do you provide?
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseFive" class="collapse">
+                <div class="card-body">
+                  We provides additional services, such as email templates and social media content. Please ask for any special needs.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <a href="#collapseSix" data-toggle="collapse" data-parent="accordion">
+                    Who will write the content?
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseSix" class="collapse">
+                <div class="card-body">
+                     You are responsible for writing your copy, We provide guidance on length, tone, and style. We also help with suggested word counts for each page.
+                    *We can employ copywriters to manage the writing and optimization of your website’s text. This is a separate cost.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-  </body>
+  <!-- FOOTER -->
+  <footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span>
+            akaWebber</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
+</body>
