@@ -14,7 +14,7 @@ body {
 }
 
 .span-span {
-  font: 2.25rem;
+  font-size: 2.25rem !important;
 }
 
 .carousel-item {
@@ -58,7 +58,7 @@ body {
 #video-play {
   position: relative;
   min-height: 250px;
-  background: image-url('webber_logo1.png');
+  background: image-url('aka_logo.png');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0 -300px;
