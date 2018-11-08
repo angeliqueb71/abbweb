@@ -8,6 +8,12 @@ body {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
+.navbar-brand {
+  // font-family: 'Syncopate', sans-serif;
+  font-family: 'Poiret One', cursive;
+  font-size: 30px !important;
+  font-weight: bolder !important;
+}
 
 .navbar .nav-item.active {
   border-left: #444 3px solid;
