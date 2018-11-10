@@ -8,6 +8,7 @@ body {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
+
 .navbar-brand {
   font-family: 'Merriweather', serif;
   // font-family: 'El Messiri', sans-serif;
@@ -16,8 +17,9 @@ body {
 }
 @media only screen and (max-width: 640px) {
   .navbar-brand {
-  font-size: 20px !important;
-    }}
+    font-size: 20px !important;
+  }
+}
 
 .navbar .nav-item.active {
   border-left: #444 3px solid;
@@ -25,6 +27,11 @@ body {
 
 .carousel-item {
   height: 450px;
+}
+@media only screen and (max-width: 640px) {
+  .carousel-item {
+    height: 350px !important;
+  }
 }
 
 .carousel-image-1 {
@@ -107,4 +114,16 @@ body {
 #main-footer {
   background: #000;
   color: #fff;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .display-7 {
+    font-size: 25px !important;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .lead {
+    font-size: 12px !important;
+  }
 }
