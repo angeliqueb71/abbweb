@@ -26,3 +26,8 @@ INSTALL:
 
 gem install font-awesome-rails
 =
+
+Website icon (rel=icon) not appearing in chrome for android
+
+
+https://stackoverflow.com/questions/45537897/website-icon-rel-icon-not-appearing-in-chrome-for-android
