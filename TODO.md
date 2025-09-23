@@ -35,6 +35,7 @@
 - [x] Test application locally ✅
 - [x] Fix any view/asset issues ✅
 - [x] Commit changes ✅
+- [x] Generate and commit Gemfile.lock ✅
 - [x] Attempt Heroku deployment - **FAILED: Stack upgrade issues**
 - [ ] Deploy to Heroku - **BLOCKED by Heroku stack compatibility**
 
