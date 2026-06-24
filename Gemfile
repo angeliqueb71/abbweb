@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "3.2.0"
+ruby "3.3.11"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -9,6 +9,9 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.0'
+gem 'logger'
+gem 'csv'
+gem 'base64'
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'pg', '~> 1.1'
